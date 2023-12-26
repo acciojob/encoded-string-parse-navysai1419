@@ -8,13 +8,17 @@ const parseCode = (str) => {
   const id = parts[2];
 
   // Create and return an object with the extracted values
-  return {
+  const result = {
     firstName,
     lastName,
-    id
+    id 
   };
+
+  console.log(result); // Log the result to the console for debugging
+
+  return result;
 };
  
 // Do not change the code below
 const str = prompt("Enter str: ");
-alert(JSON.stringify(parseCode(str))); 
+alert(JSON.stringify(parseCode(str)));
